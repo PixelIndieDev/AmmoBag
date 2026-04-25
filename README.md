@@ -1,6 +1,8 @@
 # Ammo Bag
 A simple mod that allows you to reload the shotgun using shells stored inside a Belt Bag. No need to fumble with your belt bag in a pinch.
 
+This mod provides a nice quality of life tweak for frequent shotgun users.
+
 ![Preview gif showing the player reload using shells from a belt bag](https://github.com/PixelIndieDev/AmmoBag/blob/main/Docs/clipShowingThePlayerReload.gif?raw=true)
 
 ## Installation
