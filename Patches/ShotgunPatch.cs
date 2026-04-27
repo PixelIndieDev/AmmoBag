@@ -16,7 +16,6 @@ namespace AmmoBag.Patches
             {
                 PlayerControllerB player = __instance.playerHeldBy;
                 if (player == null) return;
-
                 __result = AmmoBagHelper.FindAmmoInBelt(player, __instance);
             }
         }

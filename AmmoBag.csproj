@@ -40,8 +40,8 @@
     <Reference Include="BepInEx">
       <HintPath>D:\ThunderStore Data\LethalCompany\profiles\Default\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
-    <Reference Include="LethalLib">
-      <HintPath>D:\ThunderStore Data\LethalCompany\profiles\ModCreationTesting\BepInEx\plugins\Evaisa-LethalLib\LethalLib\LethalLib.dll</HintPath>
+    <Reference Include="LethalNetworkAPI">
+      <HintPath>D:\ThunderStore Data\LethalCompany\profiles\ModCreationTesting\BepInEx\plugins\xilophor-LethalNetworkAPI\LethalNetworkAPI\LethalNetworkAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,7 +64,8 @@
   <ItemGroup>
     <Compile Include="AmmoBagHelper.cs" />
     <Compile Include="AmmoNetworking.cs" />
-    <Compile Include="Patches\GameNetworkManagerPatch.cs" />
+    <Compile Include="NetworkRequestStruct.cs" />
+    <Compile Include="Patches\MenuManagerPatch.cs" />
     <Compile Include="Patches\NetworkPatch.cs" />
     <Compile Include="Patches\PlayerPatch.cs" />
     <Compile Include="Patches\ShotgunPatch.cs" />
