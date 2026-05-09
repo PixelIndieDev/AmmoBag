@@ -18,4 +18,6 @@ No configuration needed.
 ## Compatibility
 Works for V81
 
+Works for host and clients
+
 This mod should work alongside most other mods.

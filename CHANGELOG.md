@@ -1,3 +1,6 @@
+## v1.2.0
+- Fixed an issue where the networking request could be overridden by other mods
+
 ## v1.1.0
 - The mod now supports modded belt bag and inventory sizes
 - Fixed an networking issue that prevented the shotgun from reloading for clients

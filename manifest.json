@@ -1,6 +1,6 @@
 {
   "name": "AmmoBag",
-  "version_number": "1.1.0",
+  "version_number": "1.2.0",
   "website_url": "https://github.com/PixelIndieDev/AmmoBag",
   "description": "A simple mod that allows you to reload the shotgun using shells stored inside a Belt Bag",
   "dependencies": [

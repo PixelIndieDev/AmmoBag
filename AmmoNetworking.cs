@@ -5,14 +5,18 @@ namespace AmmoBag
 {
     internal static class AmmoNetworking
     {
+        private const string MessageId_sv = ModInfo.modGUID + ".msg_DeleteOnServer";
+        private const string MessageId_cl = ModInfo.modGUID + ".msg_DeleteOnClients";
+
         private static LNetworkMessage<NetworkRequestStruct> msg_deleteShell_Server;
         private static LNetworkMessage<NetworkRequestStruct> msg_deleteShell_Client;
+
         internal static bool isHosting = false;
 
         internal static void SetNetworkMessage()
         {
-            msg_deleteShell_Server = LNetworkMessage<NetworkRequestStruct>.Connect("msg_DeleteOnServer", onServerReceived: OnRemoveAmmoReceivedServer);
-            msg_deleteShell_Client = LNetworkMessage<NetworkRequestStruct>.Connect("msg_DeleteOnClients", onClientReceived: OnRemoveAmmoReceivedClient);
+            msg_deleteShell_Server = LNetworkMessage<NetworkRequestStruct>.Connect(MessageId_sv, onServerReceived: OnRemoveAmmoReceivedServer);
+            msg_deleteShell_Client = LNetworkMessage<NetworkRequestStruct>.Connect(MessageId_cl, onClientReceived: OnRemoveAmmoReceivedClient);
         }
 
         public static void RequestRemoveAmmo(ulong bagNetworkObjectId, int ammoInBagIndex)
